@@ -36,3 +36,15 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+task hello {
+ doLast {
+  println 'hello world'
+ }
+}
+
+tasks.named('hello') {
+ doFirst() {
+  println 'this is a sample'
+ }
+}

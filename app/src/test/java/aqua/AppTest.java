@@ -10,8 +10,8 @@ class AppTest {
 
   @Test
   public void appHasAGreeting() {
-    App classUnderTest = new App();
-    assertNotNull(classUnderTest.foo(), "foo1");
-    assertEquals(classUnderTest.foo(), "foo");
+    App clazz = new App();
+    assertNotNull(clazz.foo(), "foo1");
+    assertEquals(clazz.foo(), "foo");
   }
 }
