@@ -19,9 +19,8 @@ public class App {
     throws Exception
   {
     log("<----entry point---->");
-
     StreamExample example = new StreamExample();
-    //example.test();
+    example.test();
 
     //SeleniumBasicExample selenium = new SeleniumBasicExample();
     //selenium.run();
@@ -38,4 +37,6 @@ public class App {
 
     log("version => " + System.getProperty("java.version"));
   }
+
+  // -----------------------------------------------------
 }
