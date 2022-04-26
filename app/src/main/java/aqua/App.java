@@ -22,9 +22,6 @@ public class App {
     StreamExample example = new StreamExample();
     example.test();
 
-    //SeleniumBasicExample selenium = new SeleniumBasicExample();
-    //selenium.run();
-
     JEightLambdas jeight = new JEightLambdas();
     //jeight.test();
   }

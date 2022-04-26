@@ -22,9 +22,6 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
-
-    // selenium
-    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
 }
 
 application {
