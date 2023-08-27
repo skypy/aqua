@@ -9,8 +9,14 @@ exp = JAVA_HOME=$(JAVA_HOME)
 clean:
 	./gradlew clean
 
+tags:
+	rm -f TAGS;
+	find ../aqua -name "*.java" | xargs etags -a
+
 build:
 	./gradlew build
+
+default: run
 
 run:
 	./gradlew run

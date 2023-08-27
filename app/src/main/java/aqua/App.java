@@ -9,6 +9,9 @@ import java.util.function.Function;
 
 //import aqua.samples.*;
 import aqua.mjr.*;
+import aqua.effectiveJava.*;
+import aqua.wellGroundedJava.threading.*;
+
 import static aqua.lib.Logger.*;
 
 public class App {
@@ -18,9 +21,24 @@ public class App {
   private void test()
     throws Exception
   {
-    log("<----entry point---->");
+    modernReceipes();
+
+    // TODO: well grounded java examples - first is concurrency
+    ThreadingExamples te = new ThreadingExamples();
+    //log("te: " + te.test());
+
+    EffectiveJavaExamples eje = new EffectiveJavaExamples();
+    //eje.test();
+  }
+
+  private void modernReceipes()
+    throws Exception
+  {
+    ComparatorsExamples ce = new ComparatorsExamples();
+    ce.test();
+
     StreamExample example = new StreamExample();
-    example.test();
+    //example.test();
 
     JEightLambdas jeight = new JEightLambdas();
     //jeight.test();
@@ -29,11 +47,25 @@ public class App {
   public static void main(String[] args)
     throws Exception
   {
+    log("version => " + System.getProperty("java.version"));
+
+    Row row = new Row();
+    log("row = " + row.getName());
+
     App app = new App();
     app.test();
 
-    log("version => " + System.getProperty("java.version"));
+    log("impressions = " + new Long(1));
   }
 
   // -----------------------------------------------------
+
+  private static class Row {
+    private String name;
+    private int clicks;
+
+    public int getClicks() { return clicks; }
+
+    public String getName() { return null == name ? "Magic" : name; }
+  }
 }

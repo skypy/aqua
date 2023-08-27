@@ -1,0 +1,66 @@
+
+app/src/main/java/aqua/wellGroundedJava/threading/ThreadingExamples.java,68
+public class ThreadingExamples 14,271
+  public String test(15,304
+
+app/src/main/java/aqua/lib/Logger.java,145
+public class Logger 7,83
+  public static void log(9,132
+  public static void log(13,236
+  public static void printnb(17,326
+  printf(22,469
+
+app/src/main/java/aqua/lib/Monitor.java,301
+public class Monitor 9,125
+  private static final long MEGABYTE 10,148
+  private long startTime;11,202
+  private long stopTime;12,228
+  private long memory;13,253
+  public Monitor(15,277
+  public Monitor end(19,352
+  public void printInfo(29,575
+  private static long bytesToMegaBytes(35,826
+
+app/src/main/java/aqua/SampleCase.java,60
+public class SampleCase 14,244
+  public String foo(15,270
+
+app/src/main/java/aqua/mjr/StreamExample.java,348
+public class StreamExample 12,204
+  public void test(14,234
+  private void testMisc(29,489
+  private void testPartition(39,816
+  private void testCountElementsInStream(47,1066
+  private void testSummaryStatistics(57,1422
+  private void testFindFirst(64,1634
+  private void testConcatStream(71,1847
+  private void testLazyOperation(81,2153
+
+app/src/main/java/aqua/mjr/ComparatorsExamples.java,160
+public class ComparatorsExamples 12,204
+  private void comparatorsExamples(14,240
+  private void addLinearCollectionToAMap(16,281
+  public void test(23,394
+
+app/src/main/java/aqua/effectiveJava/EffectiveJavaExamples.java,70
+public class EffectiveJavaExamples 12,214
+  public void test(13,251
+
+app/src/main/java/aqua/App.java,285
+public class App 17,316
+  public String foo(19,336
+  private void test(21,377
+  public static void main(41,870
+  private static class Row 57,1207
+    private String name;58,1236
+    private int clicks;59,1261
+    public int getClicks(61,1286
+    public String getName(63,1333
+
+app/src/main/java/aqua/rl/JEightLambdas.java,62
+public class JEightLambdas 13,220
+  public void test(14,249
+
+app/src/test/java/aqua/AppTest.java,59
+class AppTest 9,174
+  public void appHasAGreeting(12,199
