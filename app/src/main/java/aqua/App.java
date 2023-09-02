@@ -55,7 +55,7 @@ public class App {
     App app = new App();
     app.test();
 
-    log("impressions = " + new Long(1));
+    log("impressions = " + Long.valueOf(1));
   }
 
   // -----------------------------------------------------

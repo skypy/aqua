@@ -19,3 +19,10 @@ sudo mkdir /opt/gradle \
   && wget https://services.gradle.org/distributions/gradle-7.2-bin.zip  \
   && unzip -d /opt/gradle gradle-7.2-bin.zip
 ```
+
+## Fix gradle issues after cloning the repository from git
+``` Error: Could not find or load main class org.gradle.wrapper.GradleWrapperMain
+Caused by: java.lang.ClassNotFoundException: org.gradle.wrapper.GradleWrapperMain ```
+
+Run the following command in shell
+```gradle wrapper```

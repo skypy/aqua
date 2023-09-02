@@ -13,8 +13,8 @@ public class Record {
 
   Record () {}
 
-  public Record setId() { this.id = val; return this; }
-  public Record setName() { this.name = val; return this; }
+  public Record setId(int val) { this.id = val; return this; }
+  public Record setName(String val) { this.name = val; return this; }
 
   public int getId() { return id; }
   public String getName() { return name; }
