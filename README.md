@@ -12,8 +12,10 @@ $ ln -s /usr/lib/jvm/jdk-17.0.8 jdk17
 ```
 
 ## install gradle
+```
 sudo mkdir /opt/gradle \
   && sudo chown $(id -u):$(id -g) /opt/gradle \
   && cd /tmp/ \
   && wget https://services.gradle.org/distributions/gradle-7.2-bin.zip  \
   && unzip -d /opt/gradle gradle-7.2-bin.zip
+```
