@@ -27,7 +27,7 @@ public class App {
   {
     {
       PlayGround pg = new PlayGround();
-      //pg.test();
+      pg.test();
     }
 
     {
