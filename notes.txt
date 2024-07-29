@@ -1,0 +1,27 @@
+# Installing JDK21
+
+- download x64 compressed archive
+https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz (sha256)
+
+$ tar -xvzf ~/Downloads/jdk-21_linux-x64_bin.tar.gz
+$ sudo cp -r /usr/lib/jvm/
+$ cd /opt/jdk/
+$ ln -s /usr/lib/jvm/jdk-21.0.4 jdk21
+
+- edit ~/.bashrc add the folling line
+export JAVA_HOME=/opt/jdk/jdk21
+$ source ~/.bashrc
+
+$ sudo chown -R root:root /usr/lib/jvm/jdk-21.0.4/
+
+$ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk-21.0.4/bin/java" 0
+$ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk-21.0.4/bin/javac" 0
+$ sudo update-alternatives --install "/usr/bin/javap" "javap" "/usr/lib/jvm/jdk-21.0.4/bin/javap" 0
+$ sudo update-alternatives --set java /usr/lib/jvm/jdk-21.0.4/bin/java
+$ sudo update-alternatives --set javac /usr/lib/jvm/jdk-21.0.4/bin/javac
+$ sudo update-alternatives --set javap /usr/lib/jvm/jdk-21.0.4/bin/javap
+
+
+$ update-alternatives --list java
+$ update-alternatives --list javac
+$ update-alternatives --list javap

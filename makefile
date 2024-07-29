@@ -1,6 +1,6 @@
 #JAVA_HOME = /opt/sun/jdk15
 
-JAVA_HOME = /opt/jdk/jdk17
+JAVA_HOME = /opt/jdk/jdk21
 GRADLE_HOME = /opt/gradle/gradle-7.2
 
 #GRADLE = $(GRADLE_HOME)/bin/gradle

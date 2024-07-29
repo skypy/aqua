@@ -1,6 +1,7 @@
 package aqua;
 
 import java.util.*;
+import java.util.Date;
 import java.text.*;
 import java.io.*;
 import java.util.stream.*;
@@ -11,6 +12,9 @@ import java.util.function.Function;
 import aqua.mjr.*;
 import aqua.effectiveJava.*;
 import aqua.wellGroundedJava.threading.*;
+import aqua.examples.*;
+import aqua.pragmatic.compare.*;
+import aqua.pragmatic.designing.*;
 
 import static aqua.lib.Logger.*;
 
@@ -21,21 +25,57 @@ public class App {
   private void test()
     throws Exception
   {
-    modernReceipes();
+    {
+      PlayGround pg = new PlayGround();
+      //pg.test();
+    }
 
-    // TODO: well grounded java examples - first is concurrency
-    ThreadingExamples te = new ThreadingExamples();
-    //log("te: " + te.test());
+    {
+      AssetHelper helper = new AssetHelper();
+      //helper.test();
+      log("version = " + System.getProperty("java.version"));
+    }
 
-    EffectiveJavaExamples eje = new EffectiveJavaExamples();
-    //eje.test();
+    {
+      Compare c = new Compare();
+      //c.test();
+    }
+
+    {
+      //EffectiveJavaExamples eje = new EffectiveJavaExamples();
+      //eje.test();
+    }
+
+    {
+      functionExamples();
+    }
+
+    {
+      //modernReceipes();
+    }
+
+    {
+      // TODO: well grounded java examples - first is concurrency
+      //ThreadingExamples te = new ThreadingExamples();
+      //log("te: " + te.test());
+    }
+  }
+
+  private void functionExamples()
+    throws Exception
+  {
+    FunctionalExample fe = new FunctionalExample();
+    fe.test();
   }
 
   private void modernReceipes()
     throws Exception
   {
+    LearnFunctions fn = new LearnFunctions();
+    fn.test();
+
     ComparatorsExamples ce = new ComparatorsExamples();
-    ce.test();
+    //ce.test();
 
     StreamExample example = new StreamExample();
     //example.test();
@@ -47,25 +87,9 @@ public class App {
   public static void main(String[] args)
     throws Exception
   {
-    log("version => " + System.getProperty("java.version"));
-
-    Row row = new Row();
-    log("row = " + row.getName());
-
     App app = new App();
     app.test();
 
-    log("impressions = " + Long.valueOf(1));
   }
 
-  // -----------------------------------------------------
-
-  private static class Row {
-    private String name;
-    private int clicks;
-
-    public int getClicks() { return clicks; }
-
-    public String getName() { return null == name ? "Magic" : name; }
-  }
 }
