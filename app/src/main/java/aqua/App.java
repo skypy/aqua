@@ -8,11 +8,12 @@ import java.util.stream.*;
 import java.util.function.*;
 import java.util.function.Function;
 
-//import aqua.samples.*;
+import aqua.playGround.*;
 import aqua.mjr.*;
 import aqua.effectiveJava.*;
 import aqua.wellGroundedJava.threading.*;
 import aqua.examples.*;
+import aqua.pragmatic.*;
 import aqua.pragmatic.compare.*;
 import aqua.pragmatic.designing.*;
 
@@ -26,14 +27,15 @@ public class App {
     throws Exception
   {
     {
-      PlayGround pg = new PlayGround();
-      pg.test();
+      //log("version = " + System.getProperty("java.version"));
+
+      //PlayGround pg = new PlayGround();
+      //pg.test();
     }
 
     {
-      AssetHelper helper = new AssetHelper();
-      //helper.test();
-      log("version = " + System.getProperty("java.version"));
+      Pragmatic p = new Pragmatic();
+      p.test();
     }
 
     {
@@ -89,7 +91,5 @@ public class App {
   {
     App app = new App();
     app.test();
-
   }
-
 }
