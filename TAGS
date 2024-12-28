@@ -1,0 +1,183 @@
+
+app/src/main/java/aqua/playGround/PlayGround.java,125
+public class PlayGround 17,326
+  public void test(19,353
+  private void threadExample(31,578
+  public record Stat(44,878
+
+app/src/main/java/aqua/mjr/LearnFunctions.java,127
+public class LearnFunctions 12,204
+  public void test(14,235
+  private void supplier(21,320
+  private void consumer(28,455
+
+app/src/main/java/aqua/mjr/ComparatorsExamples.java,160
+public class ComparatorsExamples 12,204
+  private void comparatorsExamples(14,240
+  private void addLinearCollectionToAMap(16,281
+  public void test(23,394
+
+app/src/main/java/aqua/mjr/StreamExample.java,348
+public class StreamExample 12,204
+  public void test(14,234
+  private void testMisc(29,489
+  private void testPartition(39,816
+  private void testCountElementsInStream(47,1066
+  private void testSummaryStatistics(57,1422
+  private void testFindFirst(64,1634
+  private void testConcatStream(71,1847
+  private void testLazyOperation(81,2153
+
+app/src/main/java/aqua/wellGroundedJava/threading/ThreadingExamples.java,68
+public class ThreadingExamples 14,271
+  public String test(15,304
+
+app/src/main/java/aqua/App.java,196
+public class App 22,457
+  public String foo(24,477
+  private void test(26,518
+  private void functionExamples(52,1070
+  private void modernReceipes(59,1201
+  public static void main(72,1470
+
+app/src/main/java/aqua/examples/FunctionalExample.java,689
+public class FunctionalExample 13,232
+  public void test(15,266
+  public void test2(21,318
+  private void comparatorExample(43,807
+  private void iterate(69,1507
+  public static Predicate<String> checkIfStartsWith(77,1631
+  public class Person 83,1809
+    private String name;84,1833
+    private int age;85,1858
+    public Person(87,1880
+    public String getName(92,1975
+    public int getAge(96,2031
+    public String toString(100,2082
+    public int ageDiff(104,2174
+    public void printPeople(108,2256
+    public static class NameComparator 112,2363
+      public int compare(114,2450
+    public static class AgeComparator 119,2567
+      public int compare(121,2653
+
+app/src/main/java/aqua/lib/Logger.java,145
+public class Logger 7,83
+  public static void log(9,132
+  public static void log(13,236
+  public static void printnb(17,326
+  printf(22,469
+
+app/src/main/java/aqua/lib/Monitor.java,301
+public class Monitor 9,125
+  private static final long MEGABYTE 10,148
+  private long startTime;11,202
+  private long stopTime;12,228
+  private long memory;13,253
+  public Monitor(15,277
+  public Monitor end(19,352
+  public void printInfo(29,575
+  private static long bytesToMegaBytes(35,826
+
+app/src/main/java/aqua/richard/DesginPrinciples.java,65
+public class DesginPrinciples 13,228
+  public void test(14,260
+
+app/src/main/java/aqua/SampleCase.java,60
+public class SampleCase 14,244
+  public String foo(15,270
+
+app/src/main/java/aqua/utility/Worker.java,122
+public class Worker 11,197
+  private final Processor processor;12,239
+  public Worker(14,277
+  public void run(19,365
+
+app/src/main/java/aqua/utility/Processor.java,182
+public class Processor 14,251
+  private final Object lock;15,276
+  private int token 16,305
+  public Processor(18,331
+  public void process(22,392
+  public int getToken(37,781
+
+app/src/main/java/aqua/effectiveJava/EffectiveJavaExamples.java,399
+public class EffectiveJavaExamples 12,214
+  public void test(13,251
+  private static class Processor 30,516
+    private Row row;31,551
+    public Processor(33,573
+  private static class Row 44,731
+    private boolean flag;45,760
+    private int count;46,786
+    public Row setFlag(48,810
+    public Row setCount(49,875
+    public boolean getFlag(51,939
+    public String toString(53,986
+
+app/src/main/java/aqua/record/Record.java,221
+public class Record 10,172
+  private int id;11,194
+  private String name;12,212
+  Record 14,236
+  public Record setId(16,252
+  public Record setName(17,315
+  public int getId(19,386
+  public String getName(20,422
+
+app/src/main/java/aqua/pragmatic/designing/Asset.java,305
+public class Asset 13,243
+  public enum AssetType 14,264
+  public enum AssetType { BOND,14,264
+  public enum AssetType { BOND, STOCK 14,264
+  private final AssetType type;16,306
+  private final int value;17,338
+  public Asset(19,366
+  public AssetType getType(24,483
+  public int getValue(26,530
+
+app/src/main/java/aqua/pragmatic/designing/CalculateNav.java,205
+public class CalculateNav 14,272
+  private Function<Function15,300
+  private Function<String, BigDecimal> priceFinder;15,300
+  public CalculateNav(17,353
+  public BigDecimal computeStockPrice(23,483
+
+app/src/main/java/aqua/pragmatic/designing/AssetHelper.java,163
+public class AssetHelper 13,243
+  List<Asset> assets;14,270
+  public void createAssests(16,293
+  public int totalAssetValues(26,608
+  public void test(37,890
+
+app/src/main/java/aqua/pragmatic/compare/Compare.java,500
+public class Compare 13,241
+  public void test(14,264
+  public class Person 22,370
+    private String name;23,394
+    private int age;24,419
+    public Person(26,441
+    public String getName(31,536
+    public int getAge(35,592
+    public String toString(39,643
+    public int ageDiff(43,735
+    public void printPeople(47,817
+    public static class NameComparator 51,924
+      public int compare(53,1011
+    public static class AgeComparator 58,1128
+      public int compare(60,1214
+
+app/src/main/java/aqua/pragmatic/data/StockSource.java,126
+public class StockSource 7,105
+  final private static String SOURCE_EODHD 8,132
+  public static BigDecimal getPrice(10,234
+
+app/src/main/java/aqua/pragmatic/Pragmatic.java,128
+public class Pragmatic 18,371
+  public void test(20,397
+  private static class Designing 30,557
+    public void test(31,592
+
+app/src/test/java/aqua/AppTest.java,59
+class AppTest 9,174
+  public void appHasAGreeting(12,199
