@@ -10,6 +10,7 @@ import java.util.function.Function;
 
 import aqua.pragmatic.compare.*;
 import aqua.pragmatic.designing.*;
+import aqua.richard.*;
 import aqua.utility.*;
 
 import static aqua.lib.Logger.*;
@@ -25,6 +26,8 @@ public class PlayGround {
     //Stat stat = new Stat(100, 50.3f);
     //log("clicks = " + stat.clicks() + " : cost = " + stat.cost());
 
+    DesignPrinciples dp = new DesignPrinciples();
+    dp.test();
   }
 
   private void threadExample()
