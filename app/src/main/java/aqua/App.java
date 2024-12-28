@@ -26,41 +26,27 @@ public class App {
   private void test()
     throws Exception
   {
-    {
-      //log("version = " + System.getProperty("java.version"));
+    //log("version = " + System.getProperty("java.version"));
 
-      //PlayGround pg = new PlayGround();
-      //pg.test();
-    }
+    PlayGround pg = new PlayGround();
+    pg.test();
 
-    {
-      Pragmatic p = new Pragmatic();
-      p.test();
-    }
+    Pragmatic p = new Pragmatic();
+    //p.test();
 
-    {
-      Compare c = new Compare();
-      //c.test();
-    }
+    Compare c = new Compare();
+    //c.test();
 
-    {
-      //EffectiveJavaExamples eje = new EffectiveJavaExamples();
-      //eje.test();
-    }
+    //EffectiveJavaExamples eje = new EffectiveJavaExamples();
+    //eje.test();
 
-    {
-      functionExamples();
-    }
+    //functionExamples();
 
-    {
-      //modernReceipes();
-    }
+    //modernReceipes();
 
-    {
-      // TODO: well grounded java examples - first is concurrency
-      //ThreadingExamples te = new ThreadingExamples();
-      //log("te: " + te.test());
-    }
+    // TODO: well grounded java examples - first is concurrency
+    //ThreadingExamples te = new ThreadingExamples();
+    //log("te: " + te.test());
   }
 
   private void functionExamples()
@@ -81,9 +67,6 @@ public class App {
 
     StreamExample example = new StreamExample();
     //example.test();
-
-    JEightLambdas jeight = new JEightLambdas();
-    //jeight.test();
   }
 
   public static void main(String[] args)

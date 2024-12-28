@@ -31,11 +31,14 @@ public class Pragmatic {
     public void test()
       throws Exception
     {
-      // separating concerns using lambda
+      // XX separating concerns using lambda
+
       //AssetHelper helper = new AssetHelper();
       //helper.test();
 
-      // delegating using lambda
+      // ----------------------------------------------
+
+      // XX delegating using lambda
 
       // XX error => incompatible thrown types Exception in functional expression
       // CalculateNav calc = new CalculateNav(StockSource::getPrice);
@@ -53,6 +56,11 @@ public class Pragmatic {
       CalculateNav calc = new CalculateNav(priceFinder);
       BigDecimal price = calc.computeStockPrice("AAPL", 100);
       log("100 Apple stock price = " + price);
+
+      // ----------------------------------------------
+
+      // XX decorating using lambda expressions
+
     }
   }
 }

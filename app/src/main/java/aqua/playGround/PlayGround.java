@@ -19,6 +19,17 @@ public class PlayGround {
   public void test()
     throws Exception
   {
+    //threadExample();
+
+    // use of Record (getter / setter)
+    //Stat stat = new Stat(100, 50.3f);
+    //log("clicks = " + stat.clicks() + " : cost = " + stat.cost());
+
+  }
+
+  private void threadExample()
+    throws Exception
+  {
     Object lock = new Object();
     Processor processor = new Processor(lock);
 
@@ -28,4 +39,6 @@ public class PlayGround {
     t1.start();
     t2.start();
   }
+
+  public record Stat(int clicks, float cost) { }
 }
