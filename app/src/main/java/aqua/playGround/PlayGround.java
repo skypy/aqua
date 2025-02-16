@@ -12,6 +12,7 @@ import aqua.pragmatic.compare.*;
 import aqua.pragmatic.designing.*;
 import aqua.richard.*;
 import aqua.utility.*;
+import aqua.samples.*;
 
 import static aqua.lib.Logger.*;
 
@@ -27,7 +28,10 @@ public class PlayGround {
     //log("clicks = " + stat.clicks() + " : cost = " + stat.cost());
 
     DesignPrinciples dp = new DesignPrinciples();
-    dp.test();
+    //dp.test();
+
+    GenericsExamples ge = new GenericsExamples();
+    ge.test();
   }
 
   private void threadExample()
